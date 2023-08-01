@@ -36,6 +36,49 @@ li {
 }
 
 ol li {
-    margin-bottom: 5px;
-    cursor: pointer;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.switch-button {
+  width: 128px;
+  height: 40px;
+  background-color: #d1d1d1;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+.switch-button.on {
+  background-color: #5eba7d;
+}
+
+.switch-button.off {
+  background-color: #d1d1d1;
+}
+
+.switch-button.on .toggle {
+  transform: translateX(90px);
+}
+
+.switch-button.off .toggle {
+  transform: translateX(0);
+}
+
+.toggle span {
+  font-size: 10px;
 }
