@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+}
+
+.qs01 {
+  width: 50%;
+  text-align: center;
+}
+
+.updateTime {
+  margin-top: 10px;
+}
+
+.contentShow {
+  width: 600px;
+  height: 120px;
+  margin-top: 10px;
+}
+
+.qs01c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol,
+li {
+  width: fit-content;
+}
+
+ol li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
